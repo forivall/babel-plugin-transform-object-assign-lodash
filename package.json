@@ -18,7 +18,7 @@
     "test": "ava",
     "lint": "xo",
     "posttest": "npm run lint",
-    "postinstall": "npm run build"
+    "prepare": "npm run build"
   },
   "devDependencies": {
     "ava": "^0.19.1",
