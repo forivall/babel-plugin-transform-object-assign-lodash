@@ -1,6 +1,6 @@
 {
   "name": "babel-plugin-transform-object-assign-lodash",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Replace Object.assign with a lodash/assign",
   "repository": "https://github.com/forivall/babel-plugin-transform-object-assign-lodash",
   "author": "Emily Marigold Klassen <forivall@gmail.com>",
