@@ -1,0 +1,11 @@
+.DS_Store
+node_modules
+test/tmp
+*.log
+*.cache
+/.eslintcache
+/coverage
+dist
+/.package.json
+/lib
+.nyc_output

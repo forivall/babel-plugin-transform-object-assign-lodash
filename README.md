@@ -1,6 +1,10 @@
 # babel-plugin-transform-object-assign
 
-> Replace `Object.assign` with an inline helper. If you are authoring an application, rather than a library, it is recommended that you use the `Object.assign` polyfill instead.
+> Replace `Object.assign` with `lodash/assign`. If you are authoring an application, rather than a library, it is recommended that you use the `Object.assign` polyfill instead.
+
+## Todo
+
+Allow use of `require('lodash.assign')`
 
 ## Example
 
@@ -13,9 +17,9 @@ Object.assign(a, b);
 **Out**
 
 ```javascript
-var _extends = ...;
+var _assign = require('lodash/assign');
 
-_extends(a, b);
+_assign(a, b);
 ```
 
 ## Caveats
@@ -41,20 +45,20 @@ npm install --save-dev babel-plugin-transform-object-assign
 
 ```json
 {
-  "plugins": ["transform-object-assign"]
+  "plugins": ["transform-object-assign-lodash"]
 }
 ```
 
 ### Via CLI
 
 ```sh
-babel --plugins transform-object-assign script.js
+babel --plugins transform-object-assign-lodash script.js
 ```
 
 ### Via Node API
 
 ```javascript
 require("babel-core").transform("code", {
-  plugins: ["transform-object-assign"]
+  plugins: ["transform-object-assign-lodash"]
 });
 ```
